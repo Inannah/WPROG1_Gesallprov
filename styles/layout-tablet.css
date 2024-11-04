@@ -1,0 +1,82 @@
+@media only screen and (min-width: 600px){
+	
+	body{
+		font-size: 1rem;
+	}
+
+	.list-menu-item, .tab-menu-item, .icon-menu-item, button{
+		font-size: 1.1rem;
+	}
+	
+	.main-menu-button{
+		height: 3em;
+		line-height: 3em;
+	}
+	
+	footer{
+		display: grid;
+		grid-template-columns: 55px auto 55px;
+		padding: 0.5em;
+		gap: 1em;
+	}
+	
+	.spacer{
+		flex-grow: 3;
+	}
+	
+	#music-player{
+		flex-flow: row nowrap;
+	}
+	
+	#song-info{
+		max-width: 62vw;
+		margin-left: 0.5em;
+		text-align: left;
+	}
+	
+	#player-song-title, #player-song-artist{
+		width: 55vw;
+	}
+	
+	#settings-menu{
+		bottom: 1.8em;
+		padding:0 0 1.4em 0;
+		min-width: 13em;
+	}
+	
+	#settings-menu button{
+		padding: 0.7em;
+	}
+	
+	#faq-layout{
+		display: grid;
+		grid-template-columns: 14em auto;
+		grid-template-rows: none;
+		padding: 1em;
+		gap: 1.5em;	
+	}
+	
+	th, td{
+			padding: 0.2em 0.5em 0.2em 0.5em;
+	}
+	
+	.tab-list{
+		position: sticky;
+		top: 0;
+		margin-top: 0;
+		height: 15em;
+	}
+	
+	.tab-list > li{
+		margin-bottom: 1em;
+	}
+	
+	.choice-button{
+		font-size: 1rem;
+	}
+	
+	.thumbnail-medium{
+		height: 12em;
+		width: 20em;
+	}
+}

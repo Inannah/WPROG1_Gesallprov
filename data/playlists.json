@@ -1,0 +1,49 @@
+{
+	"Classical_Piano": {
+		"name": "Klassiskt piano",
+		"path": "media/music/Classical_Piano/",
+		"tracks": [
+			{
+				"path": "media/music/Classical_Piano/passacaglia-classical-piano-music-241536.mp3",
+				"title": "Passacaglia",
+				"artist": "Calvin Clavier",
+				"source": "Pixabay",
+				"source_url": "https://pixabay.com/users/calvinclavier-16027823/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=241536"
+			},
+			{
+				"path": "media/music/Classical_Piano/waltz-in-a-minor-chopin-classical-piano-216329.mp3",
+				"title": "Chopin - Vals i A-moll",
+				"artist": "Calvin Clavier",
+				"source": "Pixabay",
+				"source_url": "https://pixabay.com/users/calvinclavier-16027823/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=241540"
+			},
+			{
+				"path": "media/music/Classical_Piano/gymnopedie-n1-200688.mp3",
+				"title": "Satie - Gymnopédie no 1",
+				"artist": "LAURENT BUCZEK",
+				"source": "Pixabay",
+				"source_url": "https://pixabay.com/users/lorenzobuczek-16982400/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=200688"
+			}
+		]
+	},
+	"Electro_Swing": {
+		"name": "Electroswing",
+		"path": "media/music/Electro_Swing/",
+		"tracks": [
+			{
+				"path": "media/music/Electro_Swing/cheerful-electro-swing-152580.mp3",
+				"title": "Cheerful Electro Swing",
+				"artist": "OpenMusicList",
+				"source": "Pixabay",
+				"source_url": "https://pixabay.com/users/openmusiclist-24014275/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=187701"
+			},
+			{
+				"path": "media/music/Electro_Swing/dance-dont-stop-electro-swing-150385.mp3",
+				"title": "Dance Don't Stop",
+				"artist": "OpenMusicList",
+				"source": "Pixabay",
+				"source_url": "https://pixabay.com/users/openmusiclist-24014275/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=187701"
+			}
+		]
+	}
+}

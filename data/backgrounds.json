@@ -1,0 +1,14 @@
+{
+	"Studying_girl": {
+		"url": "media/video/214500_small.mp4",
+		"thumb": "media/video/thumb_214500_small.png",
+		"source": "Video by <a href=\"https://pixabay.com/users/earth_to_infinity-42093275/?utm_source=link-attribution&utm_medium=referral&utm_campaign=video&utm_content=214500\">Earth_to_Infinity</a> from <a href=\"https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=video&utm_content=214500\">Pixabay</a>",
+		"desc": "Flicka som skriver vid sitt skrivbord"
+	},
+	"Fireplace_cabin": {
+		"url": "media/video/204117-923594068.mp4",
+		"thumb": "media/video/thumb_204117-923594068.png",
+		"source": "Video by <a href='https://pixabay.com/users/laurence_visuals-18402204/?utm_source=link-attribution&utm_medium=referral&utm_campaign=video&utm_content=204117'>Laurence</a> from <a href='https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=video&utm_content=204117'>Pixabay</a>",
+		"desc": "Tekopp, tekanna och en bok på ett bord framför en tänd brasa"
+	}
+}

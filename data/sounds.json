@@ -1,0 +1,16 @@
+{
+	"calm-nature-sounds": {
+		"url": "media/sounds/calm-nature-sounds-196258.mp3",
+		"title": "Natur",
+		"artist": "Alexander Jauk",
+		"source": "Pixabay",
+		"source_url": "https://pixabay.com/users/alex_jauk-16800354/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=196258"
+	},
+	"lit-fireplace": {
+		"url": "media/sounds/lit-fireplace-6307.mp3",
+		"title": "Brasa",
+		"artist": "Pixabay",
+		"source": "Pixabay",
+		"source_url": "https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=6307"
+	}
+}

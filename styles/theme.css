@@ -1,0 +1,110 @@
+/*Fonts*/
+@font-face {
+	font-family: 'KaushanScript';
+	src: url('fonts/Kaushan_Script/KaushanScript-Regular.ttf');
+}
+
+.logo{
+	font-family: KaushanScript, Brush Script MT, cursive;
+}
+
+body{
+	font-family: Tahoma, sans-serif;
+}
+
+ /*Färger*/
+body, header, footer {
+	background-color: black;
+	color: white;
+}
+
+a{
+	color: white;
+	text-decoration: none;
+}
+
+#timer{
+	color: white;
+    background-color: rgb(0 0 0 / .5);
+}
+
+/*Knappar och länkar*/
+
+a, button, .material-symbols-outlined {
+	transition: background-color 500ms, color 300ms;
+}
+
+button{
+	background-color: black;
+	color: white;
+	border: solid black 0px;
+	cursor: pointer;
+}
+.choice-button{
+	background-color: white;
+	color: black;
+	border: solid white 0px;
+	border-radius: 50%;
+	padding: 0.5em 1em 0.5em 1em;
+	cursor: pointer;
+}
+
+.main-menu-button{
+	background-color: black;
+	border-bottom: solid white 0.1em;
+	border-top: solid white 0.1em;
+	padding: 0.5em;
+	cursor: pointer;
+}
+
+.main-menu-button:hover{
+	background-color: dimGrey;
+	cursor: pointer;
+}
+button:hover{
+	background-color: dimGrey;
+	cursor: pointer;
+}
+
+.choice-button:hover{
+	background-color: dimGrey;
+	cursor: pointer;
+}
+
+.list-menu{
+	list-style-type: none;
+}
+
+.list-menu-item, .tab-menu-item, .icon-menu-item{
+		border: solid black 0px;
+		border-bottom: solid white 0.1rem;
+		border-top: solid white 0.1rem;
+}
+
+.list-menu-item:hover, .tab-menu-item:hover{
+	background-color: dimGrey;
+	cursor: pointer;	
+}
+
+.tab-menu-item.active {
+	background-color: #404040;
+	color: white;
+}
+
+
+a:not(.tab-control):hover{
+	color: silver;
+	cursor: pointer;
+}
+
+
+.material-symbols-outlined:not(.no-hover):hover{
+	color: silver;
+	cursor: pointer;
+}
+
+
+#settings-menu > .material-symbols-outlined:hover{
+	color: white;
+}
+

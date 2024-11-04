@@ -1,0 +1,19 @@
+@media only screen and (min-width: 1200px){
+.list-menu-item, .tab-menu-item, .icon-menu-item, button{
+		font-size: 1.2rem;
+	}
+	
+	#faq-view{
+		grid-template-columns: 16em auto;	
+		width: 60em;		
+	}
+	
+	.modal{
+		max-width: 1000px;
+	}
+	
+	.thumbnail-medium{
+		height: 12em;
+		width: 20em;
+	}
+}

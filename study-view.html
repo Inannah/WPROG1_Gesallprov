@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="Ida Andersson"/>
+		<meta name="description" content="Studievy"/>
+		<meta name="keywords" content="WPROG1, kursinlämning, gesällprov, studierum, studiemiljö, studier, lo-fi, musik" />
+		<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+		<title>Studievy</title>
+		<link rel="stylesheet" type="text/css" href="styles/theme.css" />
+		<link rel="stylesheet" type="text/css" href="styles/theme.css" />
+		<link rel="stylesheet" type="text/css" href="styles/layout.css" />
+		<link rel="stylesheet" type="text/css" href="styles/layout-small.css" />
+		<link rel="stylesheet" type="text/css" href="styles/layout-phone.css" />
+		<link rel="stylesheet" type="text/css" href="styles/layout-tablet.css" />
+		<link rel="stylesheet" type="text/css" href="styles/layout-desktop.css" />
+	</head>
+	<body>
+		<header id="view-header">
+			<h1 class="logo"><a href="start.html">StudieVy</a></h1>
+			<span class="material-symbols-outlined" id="faq-button" title="Info" aria-label="Öppna info-fönster" tabindex=0>help</span>
+		</header>	
+		<main>
+			<video autoplay muted loop id="fullscreen-video" aria-label="Tyst bakgrundsvideo">
+				<source src="media/video/214500_small.mp4" type="video/mp4">
+			</video>
+			<div id="timer">
+				<span class="material-symbols-outlined" id="timer-play-pause" title="Starta eller pausa timer" aria-label="Starta eller pausa timer" tabindex=0>play_pause</span>
+				<span id="minutes">00</span>
+				:
+				<span id="seconds">00</span>
+			</div>
+		</main>				
+		<footer>
+			<span class="material-symbols-outlined" id="bg-sound-on-off" title="Stäng av eller sätt på bakgrundsljud" aria-label="Stäng av eller sätt på bakgrundsljud" tabindex=0>graphic_eq</span>
+			<div id="music-player">
+				<div id="player-controls">
+					<span class="material-symbols-outlined" id="player-previous" title="Hoppa till föregående låt" aria-label="Hoppa till föregående låt" tabindex=0>skip_previous</span>
+					<span class="material-symbols-outlined" id="player-play-pause" title="Spela eller pausa" aria-label="Spela eller pausa musik" tabindex=0>play_pause</span>
+					<span class="material-symbols-outlined" id="player-next" title="Hoppa till nästa låt" aria-label="Hoppa till nästa låt" tabindex=0>skip_next</span>
+				</div>
+				<div id="song-info"><b><span id="player-song-artist">Artist</span></b><br><span id="player-song-title">Låttitel</span></div>
+			</div>
+			<div id="settings">
+				<span class="material-symbols-outlined" title="Inställningar" aria-label="Öppna meny med inställningar" tabindex=0>settings</span>
+				<ul class="list-menu" id="settings-menu">
+					<li class="icon-menu-item"><button id="save-settings"><span class="material-symbols-outlined">download</span>Spara inställningar</button></li>
+					<li class="icon-menu-item"><button class ="open-modal-settings" id="change-timer-settings"><span class="material-symbols-outlined">timer</span>Timerinställningar</button></li>
+					<li class="icon-menu-item"><button class ="open-modal-settings" id="change-background"><span class="material-symbols-outlined">image</span>Ändra bakgrund</button></li>
+					<li class="icon-menu-item"><button class ="open-modal-settings" id="change-music"><span class="material-symbols-outlined">queue_music</span>Ändra spellista</button></li>
+					<li class="icon-menu-item"><button class ="open-modal-settings" id="change-ambience"><span class="material-symbols-outlined">graphic_eq</span>Ändra ljudeffekt</button></li>
+				</ul>
+			</div>
+		</footer>
+		<div id="modal-overlay">
+			<div class="modal">
+				<button class="modal-close">&times;</button>
+				<div class="modal-content" id="faq-view">
+					<div id="faq-layout">
+						<ul class="tab-list list-menu">
+						<li class="tab-menu-item active"><a class="tab-control" href="#tab1">Användar&shy;instruktioner</a></li>
+						<li class="tab-menu-item"><a class="tab-control" href="#tab2">Om timern</a></li>
+						<li class="tab-menu-item"><a class="tab-control" href="#tab3">Källor</a></li>
+						</ul>
+						<div class="tab-panel active" id="tab1">Användarinstruktioner</div>
+						<div class="tab-panel" id="tab2">Om timern</div>
+						<div class="tab-panel" id="tab3">Källor</div>
+					</div>
+				</div>
+				<div class="modal-content" id="sound-menu">
+					<div class="settings-view">
+						<h3>Välj bakgrundsljud</h3>
+						<ul class="list-menu">
+							<li class="list-menu-item"><button class="bgSoundChoice" data-key="calm-nature-sounds"><span>Natur</span></button></li>
+							<li class="list-menu-item"><button class="bgSoundChoice" data-key="lit-fireplace"><span>Brasa</span></button></li>
+						</ul>
+					</div>
+				</div>
+				<div class="modal-content" id="music-menu">
+					<div class="settings-view">
+						<h3>Välj spellista</h3>
+						<ul class="list-menu">
+							<li class="list-menu-item"><button class="musicChoice" data-key="Classical_Piano"><span>Klassiskt piano</span></button></li>
+							<li class="list-menu-item"><button class="musicChoice" data-key="Electro_Swing"><span>Electroswing</span></button></li>
+						</ul>
+					</div>
+				</div>
+				<div class="modal-content" id="bg-menu">
+					<div class="settings-view">
+						<h3>Visningläge</h3>
+							<div>
+								<input type="checkbox" id="fullscreen" name="videoViewType" value="Fullscreen" />
+								<label for="fullscreen">Helskärm</label>
+							</div>
+						<h3>Välj bakgrund</h3>
+						<label>Använd en egen video... <br/><input type="file" id="videofile_input" accept=".mp4"></label>
+						<h4>...eller välj en video från listan</h4>
+						<ul class="list-menu">
+							<li class="list-menu-item">
+								<button class="bgChoice" data-key="Studying_girl">
+									<img src="/media/video/thumb_214500_small.png" alt="Flicka som skriver vid sitt skrivbord" class="thumbnail"/>
+									<span>Vid skrivbordet</span>
+								</button>
+							</li>
+							<li class="list-menu-item">
+								<button class="bgChoice" data-key="Fireplace_cabin">
+									<img src="media/video/thumb_204117-923594068.png" alt="Tekopp, tekanna och en bok på ett bord framför en tänd brasa" class="thumbnail"/>
+									<span>Mysig stuga med en brasa</span>
+								</button>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="modal-content" id="timer-settings">
+					<form class="settings-view" id="timer-settings-view">
+						<label for="useTimer"><b>Timer</b></label>
+						<div class="switch input-align">
+							<input type="checkbox" id="useTimer" name="useTimer">
+							<span class="slider"></span>
+						</div>
+						<div class="spacer-vertical"></div><div class="spacer-vertical"></div>
+						<fieldset class="time-setting">
+							<legend id="study" >Studietid: </legend>
+							<div class= "input-align">
+								<input type="number" class="time-input" id="studyMinutes" name="studyMinutes" min="0" max="59" aria-label="minuter"> :
+								<input type="number" class="time-input" id="studySeconds" name="studySeconds" min="0" max="59" aria-label="sekunder">
+							</div>
+						</fieldset>
+						<fieldset class="time-setting">
+							<legend id="break">Paustid: </legend>
+							<div class= "input-align">
+								<input type="number" class="time-input" id="breakMinutes" name="breakMinutes" min="0" max="59" aria-label="minuter"> :
+								<input type="number" class="time-input" id="breakSeconds" name="breakSeconds" min="0" max="59" aria-label="sekunder">
+							</div>
+							</fieldset>
+						<div class="spacer-vertical"></div><div class="spacer-vertical"></div>
+						<div id="button-row"><input type="reset" class="choice-button" value = "Återställ" /><button class="choice-button" id="timer-settings-submit">OK</button></div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div id="break-overlay">
+			<div class="modal" id="modal-timer">
+				<div class="modal-content" id="break-modal">
+					<h2>Paus-dags!</h2>
+					<div>
+						<span id="displayBreakMinutes">00</span>:<span id="displayBreakSeconds">00</span>
+					</div>
+					<button id="stop-break-button">Avbryt paus</button>
+				</div>
+			</div>
+		</div>
+		<script src ="scripts/jquery-3.7.1.min.js"></script>
+		<script src ="scripts/script.js"></script>
+	</body>
+</html>

@@ -1,0 +1,512 @@
+/*Huvudelement*/
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main{
+	overflow: auto;
+	margin: 2.5em 0 2.5em 0;
+}
+
+footer{
+	display: inline-grid;
+	grid-template-columns: 45px auto 45px;
+	align-items: center;
+	justify-items: stretch;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100vw;
+	height: 2em;
+	padding: 1em 0 0.5em 0;
+}
+
+footer > p {
+	margin: 0 1em 0 0;
+}
+
+
+dt{
+	margin-top: 0.8em;
+	font-weight: bold;
+	text-decoration-line: underline;
+}
+
+dd {
+    margin: 0;
+    padding: 0.2em 0 0 0;
+}
+
+h2{
+	text-align: center;
+}
+h3{
+	font-size: 1.3em;
+}
+
+caption{
+	font-size: 1.2em;
+	margin-bottom: 0.5em;
+	text-align: left;
+}
+
+th, td{
+	text-align: left;
+}
+
+/*Headers*/
+header:not(#start-header){
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 2.5em;
+	z-index: 1;
+	padding: 0.2em 0 1em 0;
+}
+
+header:not(#start-header) > h1{
+	margin: 0 0 0 0.5em;
+	padding: 0;
+}
+
+#start-header{
+	text-align: center;
+}
+
+#start-header > h1{
+	font-size: 4em;
+}
+
+/*Layout-element*/
+.spacer {
+  flex-grow: 4;
+  min-width: 1em;
+}
+
+.spacer-vertical {
+  height: 1em;
+}
+
+/*Menyer och knappar*/
+
+#main-menu{
+	position: fixed;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	flex-flow: column nowrap;
+	gap: 1em;
+	width: 50%;
+	max-width: 440px;
+	text-align: center;
+}
+
+button{
+	min-height: 40px; /*Klickbara på touch-skärm*/	
+	min-width: 40px; /*Klickbara på touch-skärm*/	
+}
+.material-symbols-outlined{
+	font-size: 40px; /*Klickbara på touch-skärm*/		
+}
+
+.main-menu-button{
+	font-size: 2em;
+	min-height: 45px;
+	padding: 0;
+}
+
+.choice-button{
+	font-size: 1.2em;
+}
+.thumbnail{
+	max-width: 300px;
+	max-height: 150px;
+	width: 5em;
+	height: 2.5em;
+}
+
+.bgChoice span{
+	grid-column: 2 / span 1;
+}
+
+#faq-button{
+	font-size: 2em;
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 0.8rem;
+}
+
+#bg-sound-on-off{
+	padding-left: 0.5em;
+	text-align: left;
+}
+
+/*musikspelare*/
+#song-info{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 400px;
+}
+
+#player-song-title, #player-song-artist{
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+#player-controls{
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+#music-player{
+	text-align: left;
+	display: flex;
+	flex-flow: column nowrap;
+}
+
+/*Settings-menyer*/
+#settings{
+	position: relative;
+	justify-self: stretch;
+	text-align: right;
+}
+
+#settings span{
+	text-align: center;
+}
+
+.icon-menu-item, .list-menu-item{
+	vertical-align:middle;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	margin-bottom: 0;
+}
+.list-menu-item {
+	margin-bottom: 0.5em;
+	
+}
+.list-menu{
+	padding-left: 0;
+}
+
+.list-menu button{
+	grid-column: 1 / span 2;
+	max-height: 4.5em;
+	width: 100%;
+	text-align: left;
+	line-height: 2.5em;
+	padding: 1em 0.5em;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.thumbnail{
+	display: inline-block;
+	vertical-align: middle;
+	padding-right: 1em;
+	margin: 0;
+	line-height: 2.5em;
+	grid-column: 1 / span 1;
+}
+
+.input-align{
+	justify-self: end;
+}
+
+#settings-menu{
+	display: none;
+	z-index: 1000;
+	position: absolute;
+	bottom: 1em;
+	right: 0;
+	padding-bottom:1em;
+	min-width: 10em;
+}
+
+#settings-menu span{
+	padding: 0 0.2em 0 0;
+	position: relative;
+	top: 0;
+	vertical-align: middle;
+}
+
+#settings:hover #settings-menu{
+	display: block;
+}
+
+#settings:focus-within #settings-menu{
+	display: block;
+}
+/*Vy-väljare*/
+#view-list{
+	display: flex;
+	flex-flow: row wrap;
+	gap: 2em;
+	margin: 3em 0.2em 3em 0.2em;
+	overflow: auto;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	height: 100%;
+}
+
+.premade-view{
+	display: block;
+	padding: 0.2em;
+	border: solid black 2px;
+}
+
+.thumbnail-medium{
+	height: 8em;
+	width: 14em;
+}
+
+.premade-view:hover{
+	border: solid dimGrey 2px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.selected-view{
+	border: solid white 2px;
+	border-radius: 5px;
+}
+
+.selected-view:hover{
+	border: solid white 2px;
+	border-radius: 5px;
+}
+
+#confirm-preset-button{
+	display: none;
+	grid-column: 2 / span 1;
+	justify-self: center;
+}
+
+/*Video-vy*/
+#fullscreen-video{
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100vw;
+	min-height: 100vh;
+	z-index: -1;
+}
+/*Timer*/
+#timer{
+	position: absolute;
+	left: 0rem;
+	top: 3.5rem;
+	padding: 0.5rem 1rem;
+	z-index: 1;
+	font-size: 2em;
+}
+
+#timer span{
+	position: relative;
+	top: 0;
+	vertical-align: middle;
+}
+
+#timer-play-pause{
+	display: inline-block;
+	padding-right: .5rem;
+}
+
+/*Switch*/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 3rem;
+  height: 1.5rem;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: darkGrey;
+  border-radius: 1.5rem;
+  
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1rem;
+  width: 1rem;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: DodgerBlue;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+/*Modal-fönster*/
+.modal {
+	display: none;
+  	background-color: black;
+	z-index: 1000;
+	border: 1px solid dimGrey;
+	overflow-y: auto;
+	margin: 0 auto;
+	min-width: 20%;
+	min-height: 20%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+#modal-overlay, #break-overlay {
+	display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 999; 
+}
+
+#faq-view{
+	display: none;
+	padding: 1em;
+	overflow-y: auto;
+	min-width: 150px;
+	min-height: 300px;
+	height: 80vh;
+}
+
+#modal-settings{
+	display: none;
+	margin: 30% auto;
+	padding: 0.5em;
+	min-width: 200px;
+	min-height: 200px;
+	
+}
+
+#modal-timer{
+	overflow: clip;
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+	height: 10em;
+}
+.modal-content{
+	display: none;
+	max-height: 90vh;
+}
+#modal-timer > .modal-content{
+	position: relative;
+	display: inline-grid;
+	grid-template-rows: 1fr 1fr 1fr;
+	margin: 0 auto;
+	padding: 1em;
+	min-width: 100px;
+	min-height: 100px;
+	text-align: center;
+	justify-items: center;
+	align-items: center;
+}
+
+.modal-content 	h2 {
+	margin: 0;
+	padding: 0;
+}
+
+
+.modal-close {
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.settings-view{
+	padding: 1em;
+	overflow: auto;
+}
+
+.tab-list{
+	text-align: center;	
+	margin: 1em;
+}
+.tab-control{
+	padding: 0.5em;
+	line-height: 3em;
+}
+
+.tab-panel{
+	display: none;
+	margin: 1em;
+}
+
+.active {
+	display: block;
+}
+
+.tab-panel > h2{
+	margin-top: 0;
+}
+
+#timer-settings-view{
+	padding-top: 3em;
+	display: grid;
+	grid-template-columns: auto auto;	
+	justify-content: space-between;   
+	gap: 0.5em;
+}
+
+.time-setting{
+	grid-column: 1 /span 2;
+	border: none;
+	display: grid;
+	grid-template-columns: 12ch auto;	
+	padding: 0;
+}
+
+.time-setting legend{
+	float: left;
+}
+
+#button-row{ 
+	grid-column: 1 / span 2;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	gap: 1em;
+}
+
+#button-row	button{
+	width: 6em;
+}
+
+input[type="number"]{
+	width:3rem;
+}
+

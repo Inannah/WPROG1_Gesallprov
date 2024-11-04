@@ -1,0 +1,192 @@
+/*240px (den dominerande bredden för mobiler för 15 år sedan)*/
+@media only screen and (max-width: 240px){
+	body{
+		font-size: 14px;
+	}
+	
+	main{
+		margin: 50px 0 100px 0;
+		padding: 1px;
+	}
+	
+	.modal{
+		width: 238px;
+	}
+	
+	.modal-content, .settings-view{
+		width: 200px;
+
+	}
+	
+	.modal, .modal-content, .settings-view{
+		padding: 1px;
+		margin: 1px;
+	}
+	
+	.modal-timer{
+		width: 100px;
+	}
+	
+	#main-menu{
+		gap: 10px;
+		margin: 20px auto;
+		width: 200px;
+	}
+	
+	.logo{
+		font-size: 24px;
+	}
+
+	#start-header h1{
+		font-size: 30px;
+	}
+
+	.main-menu-button{
+		font-size: 16px;
+		width: 175px;
+		min-height: 45px;
+		line-height: 45px;
+	}
+	
+	#view-header{
+		height: 30px;
+		padding: 8px 0 12px 0;
+		width: 240px;
+		
+	}
+	
+	#timer{
+		top: 50px;
+		padding: 5px 10px;
+	}
+	
+	#faq-button{
+		font-size: 44px;
+		position: absolute;
+		top: 0;
+		right: 0;
+		padding: 1px;
+		margin: 0;
+	}
+	
+	.settings-view{
+		padding-top: 28px;
+	}
+	
+	#timer-settings-view{
+		gap: 2px;
+	}
+	
+	.choice-button{
+		font-size: 14px;
+	}
+	
+	.list-menu{
+		max-width: 218px;
+	}
+	.faq-view{
+		grid-template-rows: 190px auto;
+		padding: 1px;
+		grid-template-columns: none;
+		gap: 1px;
+	}
+	
+	.tab-list{
+		margin: 1px;
+		margin-top: 24px;
+		position: static;
+	}
+	
+	.tab-list > li{
+		max-height: 45px;
+		margin: 1px;
+	}
+	
+	.tab-panel, td, th{
+		margin: 1px;
+		padding: 1px;
+	}
+
+	.spacer{
+		flex-grow: 0;
+	}
+	
+	footer{
+		height: 85px;
+		padding:8px 0 8px 0;
+		gap: 2px;
+		text-align: center;
+		width: 236px;
+		margin: 0;
+		grid-template-columns: 45px auto 45px;
+	}
+	
+	footer p{
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		padding: 0;
+		margin: 2px;
+	}
+	
+
+	#song-info{
+		width: 130px;
+		margin-left: 6px;
+	}
+	
+	#player-song-title, #player-song-artist{
+		margin: 0;
+		padding: 0;
+	}
+
+	#bg-sound-on-off{
+		padding-left: 4px;
+		width: 40px;
+		line-height: 40px;
+		text-align: center;
+	}
+
+	.material-symbols-outlined{
+		font-size: 40px;
+		
+	}
+	
+	#settings{
+		padding-right: 4px;
+	}
+
+	#settings-menu{
+		bottom: 20px;
+		right: 0;
+		padding-bottom:36px;
+		width: 180px;		
+	}
+	
+	#settings-menu button{
+		height: 45px;
+		padding: 0;
+		line-height: 45px;
+	}
+	#settings-menu span{
+		line-height: 15px;
+		font-size: 20px;
+	}
+	
+	#view-list{
+		padding: 1px;
+		margin: 1px auto;
+		gap: 2px;
+
+	}
+	
+	.premade-view{
+		padding: 2px;
+		margin: 0;
+	}
+	
+	.premade-view > img {
+		width: 200px;
+		height: 110px;
+	}
+}
