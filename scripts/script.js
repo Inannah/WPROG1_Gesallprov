@@ -1,7 +1,7 @@
 $( document ).ready(function() {
 	//Video-data
 	var video = "Studying_girl";
-	var videoUrl = "media/video/214500_small.mp4";
+	var videoUrl = "./media/video/214500_small.mp4";
 	var videoDesc ="Flicka som studerar vid sitt skrivbord."
 
 	//Musikspelardata
@@ -54,7 +54,7 @@ $( document ).ready(function() {
 
 	//Om study-view, hämta sparade variabler från antingen session eler local storage beroende på val i startmenyn
 	//och anropa relevanta funktioner
-	if (window.location.pathname=='/study-view.html') {
+	if (window.location.pathname.includes('/study-view.html')) {
 		var saveOption = sessionStorage.getItem("saveOption");
 		if (saveOption === "premadeView"){
 			video = sessionStorage.getItem("bg");
@@ -182,7 +182,7 @@ $( document ).ready(function() {
 	//Hämta bakgrundsljud från fil
 	function getBgSound(key, callback){
 		var xhr = new XMLHttpRequest();
-		xhr.open('GET', '../data/sounds.json');
+		xhr.open('GET', './data/sounds.json');
 		xhr.send(null);
 		xhr.onload = function() {
 			if (xhr.status === 200){
@@ -239,7 +239,7 @@ $( document ).ready(function() {
 	//Hämta spellista från fil
 	function getPlaylist(name, callback){
 		var xhr = new XMLHttpRequest();
-		xhr.open('GET', '../data/playlists.json');
+		xhr.open('GET', './data/playlists.json');
 		xhr.send(null);
 		xhr.onload = function() {
 			if (xhr.status === 200){
@@ -327,7 +327,7 @@ $( document ).ready(function() {
 	//Hämtar video-data
 	function getVideo(key, callback){
 		var xhr = new XMLHttpRequest();
-		xhr.open('GET', '../data/backgrounds.json');
+		xhr.open('GET', './data/backgrounds.json');
 		xhr.send(null);
 		xhr.onload = function() {
 			if (xhr.status === 200){
